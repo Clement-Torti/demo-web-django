@@ -13,6 +13,15 @@ go to http://localhost:8000/
 admin console: http://localhost:8000/admin 
 
 
+# Postgre
+Download Postgre at: https://www.postgresql.org/download/
+brew install postgresql
+pip install psycopg2
+createdb <your_database_name>
+set user and password using pgAdmin (postgres/root) and set in in the settings.py file
+
+
+
 # Model change
 python manage.py makemigrations (add table to sqlite3)
 python manage.py migrate (update the app)
@@ -26,6 +35,7 @@ http://localhost:8000/admin
 # CORS origin
 To allow react to send http request to django localhost
 pip install django-cors-headers
+
 
 
 # Doubts
