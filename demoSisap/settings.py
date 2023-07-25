@@ -86,12 +86,24 @@ WSGI_APPLICATION = "demoSisap.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'demo',    # Replace with your PostgreSQL database name
+        'USER': 'postgres',    # Replace with your PostgreSQL database user
+        'PASSWORD': 'root',   # Replace with your PostgreSQL database password
+        'HOST': 'localhost',   # Replace with the database host. Use 'localhost' for a local database.
+        'PORT': '5432',   # Replace with the database port. The default PostgreSQL port is 5432.
     }
 }
+
 
 
 # Password validation
